@@ -1,0 +1,53 @@
+@use 'header';
+@use 'hero';
+@use 'variables';
+
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: variables.$mainFont;
+}
+
+@mixin text($font--size: 12px) {
+    font-size: $font--size;
+    color: variables.$color-grey;
+}
+
+@mixin title($font--size: 35px) {
+    @include text($font--size);
+    color: variables.$color-blank;
+}
+
+body {
+    background-color: variables.$background-color;
+}
+
+// TITLE SIZE
+.title--big {
+    @include title(55px);
+}
+
+.title {
+    @include title();
+}
+
+.title--small {
+    @include title(25px);
+}
+
+// TEXT SIZE
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text();
+}
+
+.text-small {
+    @include text(8px);
+}
+
+

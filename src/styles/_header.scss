@@ -1,0 +1,30 @@
+@use 'variables';
+
+
+.header {
+    background-color: transparent;
+    font-size: 1.6em;
+    
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__brand {
+        max-width: 80px;
+        margin-top: 4px;        
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            margin: 8px;
+            a {
+                text-decoration: none;
+                color: #f9f9f9;
+            }
+        }
+    }
+}
