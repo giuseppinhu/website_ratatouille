@@ -1,5 +1,6 @@
 @use 'header';
 @use 'hero';
+@use 'menu';
 @use 'variables';
 
 * {
@@ -7,15 +8,14 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: variables.$mainFont;
 }
 
-@mixin text($font--size: 12px) {
+@mixin text($font--size: 22px) {
     font-size: $font--size;
     color: variables.$color-grey;
 }
 
-@mixin title($font--size: 35px) {
+@mixin title($font--size: 45px) {
     @include text($font--size);
     color: variables.$color-blank;
 }
@@ -26,7 +26,7 @@ body {
 
 // TITLE SIZE
 .title--big {
-    @include title(55px);
+    @include title(75px);
 }
 
 .title {
@@ -34,12 +34,12 @@ body {
 }
 
 .title--small {
-    @include title(25px);
+    @include title(33px);
 }
 
 // TEXT SIZE
 .text--big {
-    @include text(18px);
+    @include text(25px);
 }
 
 .text {
@@ -47,7 +47,5 @@ body {
 }
 
 .text-small {
-    @include text(8px);
+    @include text(20px);
 }
-
-

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/styles/main.css">
     <title>Ratatouille</title>
 </head>
@@ -12,17 +13,17 @@
         <header class="header">
             <div class="header__container">
                 <h1>
-                    <img class="header__brand" src="./src/images/ratatouille.png" alt="Logo Ratatouille">
+                    <img class="header__brand" src="./dist/images/ratatouille.png" alt="Logo Ratatouille">
                 </h1>
                 <ul class="header__links">
                     <li class="header__links__item">
-                        <a href="#">Nossa História</a>
+                        <a href="#" class="title--small">Nossa História</a>
                     </li>
                     <li class="header__links__item">
-                        <a href="#">Reservas</a>
+                        <a href="#" class="title--small">Reservas</a>
                     </li>
                     <li class="header__links__item">
-                        <a href="#">Cardápio</a>
+                        <a href="#" class="title--small">Cardápio</a>
                     </li>
                 </ul>
                 <ul class="header__social header__links">
@@ -39,6 +40,31 @@
             <h1 class="title--big">La Ratatouille</h1>
             <p class="title--small">Como dizem "Qualquer um pode cozinhar!".</p>
         </div>
+    </section>
+    <section class="menu">
+        <ul class="menu__list">
+            <li class="menu__list__item">
+                <img src="./dist/images/menu/wine.png" alt="Vinho" class="menu__list__item__image">
+                <div class="menu__list__item__content">
+                    <h3 class="title--small">Vinhos</h3>
+                    <p class="text">Uma ampla cartela de vinhos para você harmonizar com nossos deliciosos pratos e sentir cada combinação de forma única. Um especialista poderá te ajudar a escolher a melhor opção.</p>
+                </div>
+            </li>           
+            <li class="menu__list__item">
+                <div class="menu__list__item__content">
+                    <h3 class="title--small">Pratos</h3>
+                    <p class="text">Com o prato mais famoso e procurado, "Ratatouille", nosso cardápio também contém pratos clássicos e especiais, sabores irresistíveis que vão criar um momento inesquecível.</p>
+                </div>
+                <img src="./dist/images/menu/food.png" alt="Comida" class="menu__list__item__image">
+            </li>           
+            <li class="menu__list__item">
+                <img src="./dist/images/menu/place.png" alt="Restaurante" class="menu__list__item__image">
+                <div class="menu__list__item__content">
+                    <h3 class="title--small">Ambiente</h3>
+                    <p class="text">Um ambiente desenvolvido para trazer o melhor conforto  e experiência, com boas músicas e iluminação acolhedora. Faça sua reserva e venha conhecer!</p>
+                </div>
+            </li>           
+        </ul>
     </section>
 </body>
 </html>

@@ -1,11 +1,19 @@
+@use 'variables';
+@import 'mixins';
+
 .hero {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     position: relative;
-    background: center / cover no-repeat url(https://media.disneylandparis.com/d4th/pt-pt/images/n017657_2050jan01_bistrot-chez-remy_16-9_tcm851-158740.jpg);
+    
+    // BACKGROUND HERO
+    background: center / cover no-repeat url(../../dist/images/bgHeroImage.jpg);
     background-attachment: fixed;
     z-index: 0;
+    
+    // FONT HERO AND HEADER
+    font-family: variables.$headerFont;
 
+    // OVERLAY
     ::before {
         content: '';
         position: absolute;
@@ -18,10 +26,7 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex-center-column;
         min-height: 70vh;
         z-index: 1;
     }
