@@ -14,20 +14,20 @@
     font-family: variables.$headerFont;
 
     // OVERLAY
-    ::before {
+    &::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.045);
+        background-color: rgba($color: #000000, $alpha: 0.6);
         z-index: -1;
     }
 
     &__content {
-        @include flex-center-column;
-        min-height: 70vh;
+        @include flex-center-center-column;
+        min-height: 75vh;
         z-index: 1;
     }
 }

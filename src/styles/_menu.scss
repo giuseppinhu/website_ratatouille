@@ -2,34 +2,39 @@
 @import 'mixins';
 
 .menu {
-   @include flex-center;
-    min-height: 20vh;
-
-    font-family: variables.$bodyFont;
-    font-weight: 400;
+   @include flex-column-center;
+    min-height: 10vh;
 
     &__list {
-        @include flex-center-column;
-        padding: 6em 2em;
+        @include flex-center-center-column;
+        padding: 4em 0;
         max-width: 55%;
         
         &__item {
             display: flex;
             width: 100%;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+
+            &.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
             &__image {
-                width: 300px;  
-                height: 300px;
+                width: 220px;  
+                height: 220px;
                 border-radius: 50%;
                 object-fit: cover;
             }
 
             &__content {
-                @include flex-center-column;
+                @include flex-center-center-column;
                 text-align: justify;
                 padding: 2em;
 
-                h3 {
+                h2 {
                     color: variables.$color-third;
                 }
                 
