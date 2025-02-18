@@ -1,0 +1,86 @@
+@use 'variables';
+@import 'mixins';
+
+.location {
+    padding: 1vw 1vw 0.1vw 1vw;
+    background-color: variables.$color-4;
+
+    &__container {
+        @include flex-center;
+        justify-content: space-between;
+        max-width: 60%;
+        max-height: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        padding: 0.6rem;
+        background-color: variables.$background-color;
+
+        position: relative;
+
+        &__image {
+            width: 654px;
+            height: 491px;
+          
+            &--margin-left {
+                margin-left: 0.6rem;
+            
+            }
+
+            &--margin-right {
+                margin-right: 0.6rem;
+            }
+        }
+
+
+        &__content {
+            @include flex-column;
+
+            max-width: 654px;
+            height: 491px;
+
+            background-color: variables.$color-grey;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 4rem 6rem 0 6rem;
+            }
+
+            h3 {
+                margin-bottom: 1rem;
+                margin-top: 10%;
+            }
+
+            p {
+                width: 60%;
+                margin-bottom: 0.6rem;
+                text-align: justify;
+            }
+
+            span {
+                font-size: 1rem;
+                font-style: italic;
+                margin-bottom: 0.1rem;
+                color: variables.$color-second;
+
+                &.number{
+                    margin-top: 2rem;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: variables.$background-color;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: 2rem;
+                padding: 11px 15px;
+            }
+        }
+
+    }
+}

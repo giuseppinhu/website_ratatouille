@@ -15,3 +15,17 @@ document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 });
+
+document.addEventListener("scroll", function () {
+    const image = document.querySelector(".scroll--is-faded");
+    const rect = image.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top >= 0 && rect.bottom <= windowHeight) {
+        image.style.opacity = 1;
+    } else {
+        let opacity = 1 - (rect.top / windowHeight) * 1.2;
+        opacity = Math.max(opacity, 0);
+        image.style.opacity = opacity;
+    }
+});

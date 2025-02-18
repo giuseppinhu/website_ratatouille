@@ -4,6 +4,12 @@
 .header {
     background-color: transparent;
     font-size: 1.6em;
+
+    svg { 
+        width: 35px;
+        fill: #f9f9f9;
+    
+    }
     
     &__container {
         display: flex;

@@ -1,7 +1,10 @@
 @use 'header';
 @use 'hero';
 @use 'menu';
-@use 'about';
+@use 'location';
+@use 'story';
+@use 'contact';
+@use 'footer';
 @use 'variables';
 
 * {
@@ -56,8 +59,16 @@ body {
     @include text(20px);
 }
 
+.text--very-small {
+    @include text(16px);
+}
+
 .text--black {
     color: variables.$color-black; 
+}
+
+.text--brown {
+    color: variables.$color-third; 
 }
 
 .falling-image {
@@ -125,4 +136,10 @@ body {
         transform: translateX(-5px);
         transition: all 0.3s ease;
     }
+}
+
+
+.scroll--is-faded {
+    opacity: 1; /* Começa visível */
+    transition: opacity 0.5s ease-out; /* Suaviza a transição */
 }
