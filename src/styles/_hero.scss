@@ -29,5 +29,16 @@
         @include flex-center-center-column;
         min-height: 75vh;
         z-index: 1;
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 60px;
+            }
+            
+           p {
+            padding: 0 4rem;
+            font-size: 23px;
+           }
+        }
     }
 }

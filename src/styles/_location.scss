@@ -5,6 +5,26 @@
     padding: 1vw 1vw 0.1vw 1vw;
     background-color: variables.$color-4;
 
+    @media (max-width: 768px) {
+        padding: 6vw 0;
+    }
+
+    &__list {
+        &__item {
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+
+            }
+
+            @media (min-width: 968px){
+                &:nth-child(2) {
+                    flex-direction: row-reverse;
+                } 
+            }
+        }
+    }
+
     &__container {
         @include flex-center;
         justify-content: space-between;
@@ -18,17 +38,49 @@
 
         position: relative;
 
+        @media (max-width: 768px) {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0;
+            padding: 0.6rem 0;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            max-width: 80%;
+            padding: 0.6rem;
+            margin: 0 auto;
+            margin-bottom: 0.6rem;
+            flex-direction: column;
+        }
+
         &__image {
             width: 654px;
             height: 491px;
-          
+
             &--margin-left {
                 margin-left: 0.6rem;
             
+                @media (max-width: 768px) {
+                    margin: 0;
+                }
             }
 
             &--margin-right {
                 margin-right: 0.6rem;
+
+                @media (max-width: 768px) {
+                    margin: 0;
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 0.6rem
+            }
+
+            @media (max-width: 1024px){
+                max-width: 100%;
+                margin: 0 0 0.6rem 0;
             }
         }
 
@@ -41,10 +93,26 @@
 
             background-color: variables.$color-grey;
 
+            @media (max-width: 768px) {
+                height: 100%;
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                height: 100%;
+            }
+
             div {
                 display: flex;
                 flex-direction: column;
                 padding: 4rem 6rem 0 6rem;
+
+                @media (max-width: 768px) {
+                    padding-bottom: 2rem;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    padding: 4rem;
+                }
             }
 
             h3 {
@@ -79,6 +147,14 @@
             .btn {
                 margin-top: 2rem;
                 padding: 11px 15px;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 2rem;
+                }
+
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    margin-bottom: 2rem;
+                }
             }
         }
 

@@ -5,10 +5,17 @@
     background-color: transparent;
     font-size: 1.6em;
 
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
     svg { 
         width: 35px;
         fill: #f9f9f9;
-    
+
+        @media (max-width: 768px) {
+            max-width: 20px;
+        }
     }
     
     &__container {
@@ -18,7 +25,11 @@
     
     &__brand {
         max-width: 140px;
-        margin-top: 4px;        
+        margin-top: 4px;     
+        
+        @media (max-width: 768px) {
+            max-width: 70px;
+        }
     }
 
     &__links {
@@ -30,6 +41,10 @@
             a {
                 text-decoration: none;
                 color: #f9f9f9;
+
+                @media (max-width: 768px) {
+                   font-size: 25px;
+                }
             }
         }
     }

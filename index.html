@@ -51,11 +51,11 @@
                 </div>
             </li>           
             <li class="menu__list__item">
+                <img src="./dist/images/menu/food.png" alt="Comida" class="menu__list__item__image">
                 <div class="menu__list__item__content">
                     <h2 class="title--small">Pratos</h2>
                     <p class="text--small">Com o prato mais famoso e procurado, "Ratatouille", nosso cardápio também contém pratos clássicos e especiais, sabores irresistíveis que vão criar um momento inesquecível.</p>
                 </div>
-                <img src="./dist/images/menu/food.png" alt="Comida" class="menu__list__item__image">
             </li>           
             <li class="menu__list__item">
                 <img src="./dist/images/menu/place.png" alt="Restaurante" class="menu__list__item__image">
@@ -67,36 +67,38 @@
         </ul>     
     </section>
     <section class="location">
-        <div class="location__container scroll--is-faded">
-            <div class="location__container__content">
-                <div>
-                    <h3 class="title text--black">La Ratatouille</h3>                
-                    <p class="text--small text--black">Um bistrô frances original para você que deseja uma noite francesa.</p>
-                    <span>Av. Ipiranga, 344 - Centro, São Paulo, SP, 01046-010</span>
-                    <span>Segunda - Sábado 18:00hrs</span>
+        <ul class="location__list">
+            <li class="location__container location__list__item scroll--is-faded">
+                <img src="./dist/images/location/restaurant.jpg" alt="Restaurante" class="location__container__image location__container__image--margin-right scroll--is-faded">
+                <div class="location__container__content">
+                    <div>
+                        <h3 class="title text--black">La Ratatouille</h3>                
+                        <p class="text--small text--black">Um bistrô francês original para você que deseja uma noite francesa.</p>
+                        <span>Av. Ipiranga, 344 - Centro, São Paulo, SP, 01046-010</span>
+                        <span>Segunda - Sábado 18:00hrs</span>
+                    </div>
+                    <center>
+                        <button class="btn">
+                            <span>RESERVAS</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </button>
+                    </center>
                 </div>
-                <center>
-                    <button class="btn">
-                        <span>RESERVAS</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
-                </center>
-            </div>
-            <img src="./src/images/location/restaurant.jpg" alt="Restaurante" class="location__container__image location__container__image--margin-left scroll--is-faded ">
-        </div>   
-        <div class="location__container scroll--is-faded">
-            <img src="./src/images/location/restaurant_3.jpg" alt="Restaurante" class="location__container__image location__container__image--margin-right scroll--is-faded ">
-            <div class="location__container__content">
-                <div>
-                    <h3 class="title text--black">Fale Conosco!</h3>
-                    <p class="text--small text--black">Entre em contato para saber mais informações!</p>                
-                    <span class="number">11 9 1234-5678</span>
+            </li>   
+            <li class="location__container location__list__item scroll--is-faded">
+                <img src="./dist/images/location/restaurant_3.jpg" alt="Restaurante" class="location__container__image location__container__image--margin-left scroll--is-faded">
+                <div class="location__container__content">
+                    <div>
+                        <h3 class="title text--black">Fale Conosco!</h3>
+                        <p class="text--small text--black">Entre em contato para saber mais informações!</p>                
+                        <span class="number">11 9 1234-5678</span>
+                    </div>
                 </div>
-            </div>
-        </div>   
+            </li>   
+        </ul>
     </section>
     <section class="story">
         <ul class="story__list">
