@@ -1,7 +1,7 @@
 # 🐭 Ratatouille - Website Oficial
-
 Site fictício inspirado no filme **Ratatouille** da Disney/Pixar. Conta a história de Remy, um rato talentoso que sonha em se tornar chef e comandar seu próprio restaurante. Este projeto combina performance, usabilidade e um toque de magia culinária.
 
+![Ratatouille Image](https://giuseppinhu.github.io/portifolio/src/assets/projects/la_ratatoullie.jpeg)
 ## 🍽️ Sobre o Restaurante
 
 O **Restaurante Ratatouille** oferece uma experiência gastronômica única, com pratos deliciosos baseados na culinária francesa e no universo encantador do filme. Nosso foco é criar momentos memoráveis para os amantes da boa comida, com um ambiente acolhedor e uma equipe apaixonada pela arte de cozinhar.
